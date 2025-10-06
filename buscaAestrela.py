@@ -15,7 +15,6 @@ def gerar_sucessores(estado):
     return sucessores
 
 def inserir_fila_prioridade(fila, item):
-    """Insere item na fila de prioridade mantendo a ordem pelo primeiro elemento da tupla (f(n))"""
     f_n = item[0]
     for idx, elem in enumerate(fila):
         if f_n < elem[0]:
@@ -48,6 +47,6 @@ def a_star_iniciar(n_discos):
 
     return None
 
-caminho = a_star_iniciar(12)
+caminho = a_star_iniciar(6)
 for passo in caminho:
     print(passo)
